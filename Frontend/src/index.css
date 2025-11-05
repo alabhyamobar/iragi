@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Global background for all sections */
+.section {
+  background-color: #efd7ad; /* off white */
+}
+
+@font-face {
+  font-family: brush;
+  src: url(../public/fonts/FingerPaint-Regular.ttf);
+}
+
