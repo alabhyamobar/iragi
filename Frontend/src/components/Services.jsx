@@ -1,28 +1,19 @@
 import React from 'react'
+import ServiceCard from './ServiceCard'
 
-const Services = ({ id, refProp }) => {
+const Services = () => {
   return (
-    <section id={id} ref={refProp} className="w-full min-h-screen flex items-center justify-center">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl md:text-5xl font-bold mb-6">Our Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-          <div className="p-6 bg-gray-100 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">Kitchen Renovation</h3>
-            <p className="text-gray-600">Transform your kitchen into a modern space</p>
-          </div>
-          <div className="p-6 bg-gray-100 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">Bathroom Remodel</h3>
-            <p className="text-gray-600">Create luxurious bathroom spaces</p>
-          </div>
-          <div className="p-6 bg-gray-100 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2">Interior Design</h3>
-            <p className="text-gray-600">Complete interior design solutions</p>
-          </div>
-        </div>
+    <div className='h-[60vh] w-screen  flex flex-col  '>
+      <div className="heading h-[20%] flex items-center justify-center  font-[brush] text-red-900 text-3xl text-center font-bold">
+        what We Offer
       </div>
-    </section>
+      <div className="services bg-green-400 h-[90%] flex flex-col items-center justify-center gap-2 ">
+        <ServiceCard/>
+        <h2 className='text-xl text-gray-50'>swip to explore <span></span> </h2>
+      </div>
+      
+    </div>
   )
 }
 
 export default Services
-

@@ -18,7 +18,7 @@ const App = () => {
   const testimonialRef = useRef(null)
 
   return (
-    <div className="w-screen  text-black overflow-x-hidden section">
+    <div className="w-screen relative text-black overflow-x-hidden section">
       <BrushReveal/>
       <Nav />
       <Routes>

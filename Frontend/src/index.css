@@ -1,12 +1,27 @@
 @import "tailwindcss";
 
-/* Global background for all sections */
+
 .section {
-  background-color: #efd7ad; /* off white */
+  background-color: #efd7ad; 
 }
 
 @font-face {
   font-family: brush;
-  src: url(../public/fonts/FingerPaint-Regular.ttf);
+  src: url(/fonts/FingerPaint-Regular.ttf);
+}
+
+.masked{
+  width: 600px;
+  height:100%;
+  
+  mask-image: url('/images/brushstroke2.png');
+  mask-size: cover;
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-image: url('/images/brushstroke2.png');
+  -webkit-mask-size: cover;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
 }
 
