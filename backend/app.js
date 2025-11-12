@@ -3,8 +3,9 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const cookieParser = require('cookie-parser');
-const connectToDb = require("./Database/dbConnection");
+const {connectToDb} = require("./Database/dbConnection");
 const port  = process.env.PORT || 3000 ;
+const userRoutes = require("./Routes/user.routs")
 
 
 dotenv.config();
@@ -19,9 +20,11 @@ app.use(cookieParser());
 
 
 app.get('/',(req,res)=>{
-    rws.send("app is running");
+    res.send("app is running");
 })
 
+app.use("/user",userRoutes)
+
 app.listen(port,()=>{
-    console.log(`surveris running on ${port}`);
+    console.log(`server is running on ${port}`);
 })
